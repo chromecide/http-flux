@@ -1,0 +1,29 @@
+{
+  "version": "1.0.0",
+  "name": "http-flux",
+  "description": "A Simple API Application written in NodeJS",
+  "keywords": [
+    "API"
+  ],
+  "homepage": "https://github.com/chromecide/http-flux",
+  "author": "Justin Pradier <chromecide@gmail.com> (http://chromecide.com)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chromecide/http-flux"
+  },
+  "bugs": {
+    "email": "chromecide@gmail.com",
+    "url": "https://github.com/chromecide/http-flux/issues"
+  },
+  "main": "./index.js",
+  "dependencies": {
+    "serve-static": "~1.7.1",
+    "connect": "~3.3.3",
+    "cors": "~2.5.2",
+    "formidable": "~1.0.15",
+    "qs": "~2.3.3",
+    "mysql": "~2.5.3",
+    "compression": "~1.2.0"
+  },
+  "license": "MIT"
+}
