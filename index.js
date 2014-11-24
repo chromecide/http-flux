@@ -14,8 +14,8 @@ var dataStore;
 
 data.store('MySQLStore', {
     host     : 'localhost',
-    user     : '',
-    password : '',
+    user     : 'httpflux',
+    password : 'httpflux',
     database : 'TokenAPI',
     autoconnect: true,
     models: models
@@ -356,6 +356,7 @@ var app = connect();
                 res.statusCode = 200;
                 res.end(JSON.stringify(res.API_output));
             }else{
+                console.log(res);
                 res.statusCode = 404;
                 res.end('{"error":"Path not Found"}');
             }

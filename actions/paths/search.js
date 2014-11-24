@@ -43,6 +43,9 @@ module.exports = function(ds, req, res, next){
                     if(!query.where){
                         query.where = {deleted_at: null, enabled: 1};
                     }
+                    if(!query.orderby){
+                        query.orderby = 'path ASC';
+                    }
 
                     pathModel.find(query, {
                         success: function(records){
